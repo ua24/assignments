@@ -18,5 +18,7 @@
 @property (nonatomic) NSString *pic;
 @property (nonatomic) NSString *bio;
 
+- (NSString *)description;
+
 
 @end

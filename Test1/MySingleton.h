@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Profile.h"
 
 @interface MySingleton : NSObject
 
 @property (nonatomic, strong) NSMutableArray *items;
 @property (nonatomic) int selectedIndex;
+@property (nonatomic, strong) Profile *prof;
 
 + (MySingleton *)sharedMySingleton;
 

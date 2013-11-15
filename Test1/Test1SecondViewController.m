@@ -15,6 +15,7 @@
 {
     NSMutableArray *_items;
 }
+
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
@@ -23,7 +24,8 @@
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"opop");
+    NSLog(@"opop %i", indexPath.row);
+    [MySingleton sharedMySingleton].prof = _items[indexPath.row];
     return indexPath;
 }
 

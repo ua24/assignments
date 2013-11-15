@@ -16,7 +16,7 @@ static MySingleton * sharedMySingleton = NULL;
 {
     if (!sharedMySingleton || sharedMySingleton == NULL) {
 		sharedMySingleton = [MySingleton new];
-	}
+    }
 	return sharedMySingleton;
 }
 
